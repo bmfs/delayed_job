@@ -8,6 +8,7 @@ module Delayed
     self.max_attempts = 25
     self.max_run_time = 4.hours
     self.default_priority = 0
+    self.default_queue = "general"
     self.queues = []
     
     # By default failed jobs are destroyed after too many attempts. If you want to keep them around
